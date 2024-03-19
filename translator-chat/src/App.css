@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 300px !important;
+}
+
+/* Additional styles can go here */
+.placeholder-image {
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.image-background {
+  background: url('logo.jpg') no-repeat center center;
+  background-size: contain; /* Change to 'contain' to make sure the entire image is visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Adjust as needed for text */
+  height: 250px; /* Adjust as needed to show the full logo */
+}
+
+/* Additional style for the text if needed */
+.logo-text {
+  max-width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* For responsive text sizing, you might want to use media queries or a responsive text size approach */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: smaller; /* Adjust as needed */
+  }
+}
